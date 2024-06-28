@@ -8,11 +8,11 @@ export function middleware(request: NextRequest) {
   console.log("this work only on matcher array");
 
   const cookies = request.cookies;
-  console.log("cookies", cookies);
+  // console.log("cookies", cookies);
   const token = request.cookies.get("token")?.value;
 
   //   console.log("token", token);
-  console.log("request.nextUrl.pathname", request.nextUrl.pathname);
+  // console.log("request.nextUrl.pathname", request.nextUrl.pathname);
 
   if (!token) {
     return NextResponse.redirect(new URL("/login", request.url));

@@ -26,12 +26,12 @@ const Login = (props: Props) => {
       className="flex justify-center p-2
      items-center h-screen"
     >
-      <div>{state && <p>{state?.name}</p>}</div>
-
       <form
         action={formAction}
         className="flex flex-col p-4 gap-4 bg-white text-red-500 "
       >
+        <div className="text-3xl text-red-600">username : emilys</div>
+        <div className="text-3xl text-red-600">password : emilyspass</div>
         <input
           className="border border-gray-500 p-2"
           type="text"
